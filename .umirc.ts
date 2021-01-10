@@ -17,12 +17,16 @@ export default defineConfig({
     antd: false,
     title: false,
     baseNavigator: true,
-    baseSeparator: '-'
+    baseSeparator: '-',
   },
   // 单独配置路由
   routes: routes,
   // 单独配置主题，实际上是配 less 变量。
   theme: theme,
+  dva: {
+    immer: true,
+    hmr: false,
+  },
   // Umi 内置了 @ 为 项目 src 目录的别名
   // alias: {
   //   'utils': './src/utils',
@@ -66,4 +70,3 @@ export default defineConfig({
   //   },
   // },
 });
-
